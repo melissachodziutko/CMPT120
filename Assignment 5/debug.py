@@ -1,34 +1,60 @@
+def bust(total, num1, num2, num3):
+    if total > 21 and (num1 == 11 or num2 == 11 or num3 == 11):
+        print (total - 10)
+    elif total > 21:
+        print (0)
+
+
+def main():
+    num1 = int(input("enter a random value twin: "))
+    num2 = int(input("enter a random value twin: "))
+    num3 = int(input("enter a random value twin: "))
+
+    total = num1 + num2 + num3
+
+    if total <= 21:
+        print (total)
+    else:
+        print (bust(total, num1, num2, num3))
+
+
+main()
+
 def printHello():
     print("Hello")
     
 def printName(x):
-    print(x)
+    printName(x)
     
 def addition(x, y):
-    #add x and y together and return them
-    return
+    return x + y
 
 def smaller(i, j):
-    #if i is smaller than j, return i
-    #if j is smaller than i, return j
-    #if they're even, return 0
+    if i < j: 
+        return i
+    if j < i: 
+        return j
+    if j == i:
+        return 0
 
 def main():
-    
-    #call the printHello function here
-    
-    #call printName and give it the parameter of your name
-    
-    var1= 10
-    var2= 20
-    #What do we put in here to make it work?
-    print(addition())
-    
-    num1 = int(input("Enter number 1"))
-    num2 = int(input("Enter number 2"))
-    #what go here?
-    print(smaller())
 
+    printHello()
+    print("Hello") 
+    
+   
+    Name = "JayBalla"
+    print(Name)
+    
+    x = 10
+    y = 20
+   
+    print (addition (x,y))
+    
+    num1 = int(input("Enter a number "))
+    num2 = int(input("Enter a second number "))
+    #what go here?
+    print(smaller(num1, num2))
 
 
 
