@@ -10,7 +10,12 @@ class Dog(Animal):
     def __init__(self, age, name, breed):
         super().__init__(age, name)
         self.breed = breed
-        
+
+    def checkBreed(self):
+        if self.breed == "golden retriever":
+            return("Dis yo fav breed twin")
+        else:
+            return("Dis dawgy still fiya cuh")
     #make a function that checks if the dog is your favorite breed
     #if it is, tell the user that's your favorite breed
     #else, it's still a good dawg
@@ -21,8 +26,15 @@ class Dog(Animal):
 #in case you were wondering what i was talking about ^ 
 
 class Cat(Animal):
-    def __init__(self, age, name):
-        #?
+    def __init__(self, age, name, clippedears):
+        super().__init__(age, name)
+
+    def ClippedEars(self):
+        if clippedears == True:
+            return("yo lil cutey has had their ears clipped twin")
+        else:
+            return("yo lil cutey still has their ears slime")
+        
         
     #make a function that checks for that clip- if it is, mention to the user that the cat must have been a stray at some point
     #if not, say that the cat was likely always an inside cat!
@@ -35,7 +47,8 @@ def main():
     d1 = Dog(10, "frank", "lab")
     print(d1.breed)
     #call the function in dog here
-    
+    d1.Dog
     #create a cat and call your function
-
+    c1 = Cat(1, "Romani", "Black kitty")
+    
 main()
